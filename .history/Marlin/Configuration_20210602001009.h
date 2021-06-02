@@ -980,7 +980,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { 17, 42, -1 }   // makertronic
+#define NOZZLE_TO_PROBE_OFFSET { -28, -32, -3 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1080,8 +1080,8 @@
 // @section machine
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
-#define INVERT_X_DIR false
-#define INVERT_Y_DIR false
+#define INVERT_X_DIR true
+#define INVERT_Y_DIR true
 #define INVERT_Z_DIR true
 
 // @section extruder
@@ -1109,15 +1109,15 @@
 
 // Direction of endstops when homing; 1=MAX, -1=MIN
 // :[-1,1]
-#define X_HOME_DIR -1               // makertronic 1
-#define Y_HOME_DIR -1               // makertronic 1
+#define X_HOME_DIR -1
+#define Y_HOME_DIR -1
 #define Z_HOME_DIR -1
 
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 350                  // makertronic 350
-#define Y_BED_SIZE 281                  // makertronic 350
+#define X_BED_SIZE 360
+#define Y_BED_SIZE 330                  // makertronic 300
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0                   // makertronic 0
